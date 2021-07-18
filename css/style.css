@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
+
+/* =================================== MOBILE VERSION ============================================= */
+
+/* Initial Setup */
+* {
+max-width: 100%;
+}
+
+body,
+html {
+color: white;
+margin: 0;
+padding: 0;
+font-family: 'Open Sans';
+font-size: 16px;
+}
+
+.btn {
+background-color: #FCB344;
+}
+
+/* Font Setup */
+h1 {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 3em;
+}
+
+h2 {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 2em;
+}
+
+h3 {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 1.5em;
+}
+
+h4 {
+color:#FCB344;
+}
+
+/* MAIN */
+.navbar {
+font-family: 'Open Sans', sans-serif;
+background: black;
+font-weight: bold;
+width: 100%;
+position: fixed;
+z-index: 1000;
+}
+
+#SignUpModal, #LoginModal {
+color: black;
+}
+
+.navbar .container .row {
+width: 100%; 
+margin: 0;
+}
+
+#main {
+height: 667px;
+background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/bg1.png');
+background-size: cover;
+text-align: center;
+padding-top: 70%;
+}
+
+#main .btn {
+margin-top: 20%;
+}
+
+.down-arrow {
+padding-top: 20%;
+margin-bottom: 0;
+}
+
+.down-arrow a p {
+color: white;
+}
+
+.jumbotron {
+margin: 0;
+}
+
+/* ABOUT */
+#about {
+height: 667px;
+margin-bottom: 0;
+background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/bg2.png');
+background-size: cover;
+text-align: center;
+padding-top: 45%;
+display: grid;
+grid-template-columns: 1fr 5fr 1fr;
+grid-template-rows: 1fr 4fr;
+grid-template-areas:
+    ". about-text     ."
+    ". picture-slider .";
+}
+
+.about-title {
+grid-area: about-text;
+}
+
+.slider {
+grid-area: picture-slider;
+}
+
+/* FEATURES */
+#features {
+height: 667px;
+margin-bottom: 0;
+background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/bg3.png');
+background-size: cover;
+text-align: left;
+padding-top: 50%;
+}
+
+/* REQUIREMENTS */
+#requirements {
+height: 667px;
+margin-bottom: 0;
+background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/bg4.png');
+background-size: cover;
+text-align: center;
+padding-top: 10%;
+}
+
+#requirements .layer h3 {
+display: none;
+}
+
+.table {
+width: 35%;
+margin-top: 5%;
+margin-left: 10%;
+color: white;
+font-size: small;
+text-align: left;
+}
+
+table, th, td {
+border: 0.02px solid white;
+}
+
+/* QUOTES */
+#quotes {
+height: 900px;
+padding: 15% 20px;
+background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/bg5.png');
+background-size: cover;
+text-align: center;
+display: flex;
+flex-direction: column;
+}
+
+#quotes h4 {
+font-size: medium;
+}
+
+.profile {
+background: #1A1B1C;
+border-radius: 10px;
+position: relative;
+padding: 10px 15px;
+margin: 30px 10px;
+}
+
+.avatar {
+vertical-align: middle;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+}
+
+.date {
+font-size: 14px;
+margin-bottom: 0 !important;
+color: grey;
+}
+
+.quotes .fa-twitter {
+font-size: x-small;
+color: white;
+}
+
+.testimonial {
+margin-top: 20px;
+}
+
+.testimonial .profile .profil-detail {
+display: flex;
+align-items: center;
+}
+
+.profil-detail .nama {
+margin-left: 20px;
+color: #FFB548;
+font-weight: 400;
+font-size: 24px;
+font-family: Arial, Helvetica, sans-serif;
+letter-spacing: 2px;
+padding: 0;
+line-height: 22px;
+}
+
+.profil-detail .nama span {
+color: #fff;
+font-size: 18px;
+font-family: 'Open Sans', sans-serif;
+}
+
+.testimonial img {
+border-radius: 50%;
+width: 60px;
+height: 100%;
+position: relative;
+z-index: 1;
+}
+
+/* SUBSCRIBE */
+#subscribe {
+height: 500px;
+padding-top: 30%;
+padding-left: 15%;
+padding-right: 10%;
+margin: 0;
+background-color: #080A0B;
+background-image: url('../img/img6.png');
+background-size: 50%;
+background-repeat: no-repeat;
+background-position-x: 75%;
+background-position-y: 75%;
+text-align: justify;
+font-size: small;
+}
+
+/* Footer */
+#footer {
+margin: 0;
+background-color: black;
+text-align: center;
+text-decoration: none;
+font-size: x-small;
+z-index: 1001;
+}
+
+hr {
+border-color: rgb(189, 189, 189);
+}
+
+
+.card {
+background-color: black;
+font-size: 12px;
+}
+
+.card a {
+color: rgb(189, 189, 189);
+font-family: 'Open Sans', sans-serif;
+font-size: 12px;
+text-align: center;
+}
+
+.card a:hover {
+color: #fff;
+text-decoration: none;
+}
+
+.under-footer {
+color: rgb(189, 189, 189);
+padding-bottom: 30px;
+height: 100%;
+text-align: center;
+}
+
+.under-footer>* {
+justify-content: center;
+}
+
+.fa-facebook, .fa-twitter, .fa-youtube-play, .fa-twitch {
+font-size: medium;
+color: white;
+padding-left:  20px;
+padding-right: 20px;
+}
+
+.privacy-policy {
+padding-top: 20px;
+text-align: center;
+text-decoration: none;
+}
+
+.privacy-policy a {
+text-decoration: none;
+color: white;
+}
+
+/* =================================== DESKTOP VERSION ============================================= */
+
+@media (min-width: 992px) {
+  /* Font Setup */
+h1 {
+font-size: 5em;
+font-weight: bold;
+}
+
+h2 {
+font-size: 3em;
+font-weight: bold;
+}
+
+h3 {
+font-size: 2em;
+font-weight: bold;
+}
+
+h4 {
+font-size: 1em;
+}
+
+/* MAIN */
+#main {
+padding-top: 20%;
+height: auto;
+}
+
+#main .btn {
+margin-top: 5%;
+}
+
+.down-arrow {
+padding-top: 15%;
+}
+
+/* ABOUT */
+#about {
+padding-top: 5%;
+height: auto;
+display: grid;
+grid-template-columns: 3fr 5fr 1fr;
+grid-template-rows: 1fr 2fr 7fr;
+grid-template-areas:
+    ".          .              ."
+    "about-text .              ."
+    ".          picture-slider .";
+}
+
+.about-title {
+grid-area: about-text;
+}
+
+.slider {
+grid-area: picture-slider;
+}
+
+/* FEATURES */
+#features {
+padding-top: 20%;
+padding-bottom: 20%;
+padding-left: 40%;
+height: auto;
+}
+
+/* REQUIREMENTS */
+#requirements {
+padding-left: 45px;
+text-align: left;
+padding-top: 5%;
+padding-bottom: 3%;
+margin-bottom: 0;
+height: auto;
+}
+
+#requirements .layer h3 {
+display: inline;
+}
+
+.table {
+margin-top: 2%;
+color: white;
+font-size: medium;
+margin-bottom: 0%;
+}
+
+table, th, td {
+border: 0.02px solid white;
+}
+
+/* QUOTES */
+#quotes {
+padding: 5% 10%;
+text-align: left;
+height: auto;
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-template-rows: 1fr;
+grid-template-areas: 
+    "quotes-title testimony";
+}
+
+.profile {
+width: 400px;
+}
+
+.avatar {
+transform: scale(1.1);
+}
+
+.quotes-title {
+grid-area: quotes-title;
+}
+
+.testimonial {
+grid-area: testimony;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-template-areas: 
+    ".    evan "
+    "jada jada "
+    ".    aaron";
+}
+
+#evan {
+grid-area: evan;
+}
+
+#jada {
+grid-area: jada;
+}
+
+#aaron {
+grid-area: aaron;
+}
+
+/* SUBSCRIBE */
+#subscribe {
+padding-top: 10%;
+padding-left: 10%;
+padding-right: 10%;
+padding-bottom: 5%;
+background-size: 25%;
+background-position-x: 20%;
+background-position-y: 50%;
+font-size: medium;
+height: auto;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-template-areas: 
+    ".    subscribe";
+}
+
+#subscribe .row {
+grid-area: subscribe;
+}
+
+.card a {
+margin-left: 20;
+font-size: 15px;
+text-align: center;
+}
+
+.fa-facebook:hover {
+color: #3b5998;
+}
+
+.fa-twitter:hover {
+color: turquoise;
+}
+
+.fa-youtube-play:hover {
+color: red;
+}
+.fa-twitch:hover {
+color: #6441a5;
+}
+
+.copyright {
+font-size: medium;
+}
+
+.privacy-policy {
+padding-top: 0;
+text-align: right;
+}
+
+.privacy-policy p {
+font-size: medium;
+}
+
+.form-control::placeholder {
+color: maroon;
+opacity: 1;
+}
+
+.close{
+z-index:999999;
+}
+}
